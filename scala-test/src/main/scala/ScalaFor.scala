@@ -6,7 +6,7 @@ object ScalaFor {
   def main(args: Array[String]): Unit = {
     val now = new Date
     val df = getDateInstance(LONG, Locale.FRANCE)
-    val list: List[Int] = List(13,4,5,5,4,4,7,8,3)
+    val list: List[Int] = List(13, 4, 5, 5, 4, 4, 7, 8, 3)
     println(df format now)
 
     // ...?
