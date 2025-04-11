@@ -1,5 +1,7 @@
 package artofscala
 
+import artofscala.util.PerformanceChecker._
+
 object MemoizationExample {
 
   private def memoFix[A, B](f: (A => B) => A => B): A => B = {
@@ -17,18 +19,6 @@ object MemoizationExample {
   private def normalFib(value: Int): BigInt = value match{
     case _ if value <= 1 => value
     case _ => normalFib(value - 1) + normalFib(value - 2)
-  }
-
-  private def getPerformance[A, B](f: A => B)(post: (B, Long) => Unit): A => Unit =
-    arg => {
-      val start = System.currentTimeMillis()
-      val result = f(arg)
-      val end = System.currentTimeMillis()
-      post(result, end - start)
-    }
-
-  private def out(result: BigInt, time: Long):Unit = {
-    println(result + "(" +time + "ms)")
   }
 
   def main(args: Array[String]): Unit = {

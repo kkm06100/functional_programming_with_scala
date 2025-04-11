@@ -2,6 +2,7 @@ import java.text.DateFormat.{LONG, getDateInstance}
 import java.util.{Date, Locale}
 
 object ScalaFor {
+
   def main(args: Array[String]): Unit = {
     val now = new Date
     val df = getDateInstance(LONG, Locale.FRANCE)
