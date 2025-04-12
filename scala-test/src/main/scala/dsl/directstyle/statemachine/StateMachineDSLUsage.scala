@@ -1,6 +1,6 @@
-package dsl.statemachine
+package dsl.directstyle.statemachine
 
-import dsl.statemachine.status.{Approve, Approved, Pending, Reject, Rejected}
+import dsl.directstyle.statemachine.status.{Approve, Approved, Pending, Reject, Rejected}
 
 object StateMachineDSLUsage {
   def main(array: Array[String]): Unit = {

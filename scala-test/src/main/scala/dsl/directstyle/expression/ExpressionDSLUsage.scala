@@ -1,6 +1,6 @@
-package dsl.expression
+package dsl.directstyle.expression
 
-import dsl.expression.ExpressionDSL._
+import ExpressionDSL._
 
 object ExpressionDSLUsage {
 

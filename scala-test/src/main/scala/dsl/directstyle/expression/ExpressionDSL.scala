@@ -1,6 +1,6 @@
-package dsl.expression
+package dsl.directstyle.expression
 
-import dsl.expression.status.{Add, Divide, Expression, Multiply, Number}
+import dsl.directstyle.expression.status.{Add, Divide, Expression, Multiply, Number}
 
 object ExpressionDSL {
 

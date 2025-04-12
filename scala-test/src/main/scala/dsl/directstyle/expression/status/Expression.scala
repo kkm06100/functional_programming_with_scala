@@ -1,4 +1,4 @@
-package dsl.expression.status
+package dsl.directstyle.expression.status
 
 sealed trait Expression
 case class Number(value: Int) extends Expression
