@@ -1,4 +1,4 @@
-package dsl.statemachine.`type`
+package dsl.statemachine.status
 
 sealed trait Event
 case object Approve extends Event

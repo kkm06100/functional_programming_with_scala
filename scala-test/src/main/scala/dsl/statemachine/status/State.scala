@@ -1,4 +1,4 @@
-package dsl.statemachine.`type`
+package dsl.statemachine.status
 
 sealed trait State
 case object Pending extends State
