@@ -9,6 +9,8 @@ object LazyPrimeExample {
   val primes: LazyList[Int] = sieve(naturals)
 
   def main(args: Array[String]): Unit = {
+    println(naturals)
+
     println(naturals.take(30).toList)
     println(primes.take(30).toList)
   }

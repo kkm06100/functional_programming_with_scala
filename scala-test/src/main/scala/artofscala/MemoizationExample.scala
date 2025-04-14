@@ -26,6 +26,6 @@ object MemoizationExample {
     val memoization: Int => Unit = getPerformance(memoizedFib)(out)
 
     memoization(500)
-    memoization(500)
+    memoization(501)
   }
 }
