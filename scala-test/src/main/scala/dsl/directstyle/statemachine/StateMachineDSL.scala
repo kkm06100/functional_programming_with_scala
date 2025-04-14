@@ -1,7 +1,6 @@
 package dsl.directstyle.statemachine
 
 import dsl.directstyle.statemachine.status.{Event, State}
-import dsl.statemachine.status.{Event, State}
 
 class StateMachineDSL(transitions: Map[(State, Event), State]) {
   def transition(current: State, event: Event): State =
