@@ -1,6 +1,6 @@
 package functor
 
-trait MyFunctor[F[_]] {
+trait Functor[F[_]] {
 
   def lift[A, B](f: A => B): F[A] => F[B]
 
