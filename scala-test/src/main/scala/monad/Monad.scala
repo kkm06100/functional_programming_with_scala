@@ -1,6 +1,6 @@
-package functor
+package monad
 
-trait Monad[M[_]] extends Functor[M[_]] {
+trait Monad[M[_]] extends Functor[M] {
 
   def unit[A]: M[A]
 
