@@ -31,6 +31,14 @@ object ScalaFor {
       j <- 1 to 2
     } println("hello" + i + j)
 
-    for (value <- list) println(value)
+    // cartesian product
+    val list2: List[Int] = for {
+      a <- List(1, 2, 3, 4)
+      b <- List(1, 2, 3, 4)
+    } yield a * 10 + b
+
+    println(list2)
+
+    // for (value <- list) println(value)
   }
 }
