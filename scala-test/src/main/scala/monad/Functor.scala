@@ -1,4 +1,4 @@
-package functor
+package monad
 
 trait Functor[F[_]] {
 
